@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KeyboardViewController.h
 //  keyboard
 //
 //  Created by Ringo on 2017/5/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface KeyboardViewController : UIViewController
 
 @end
-

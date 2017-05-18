@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KeyboardViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    KeyboardViewController *boardVC=[[KeyboardViewController alloc]init];
+    self.window.backgroundColor=[UIColor whiteColor];
+    self.window.rootViewController=boardVC;
+    [self.window makeKeyAndVisible];
+
+    
+    
     return YES;
 }
 
